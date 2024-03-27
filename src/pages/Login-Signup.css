@@ -1,0 +1,60 @@
+/* styles.css */
+
+.login-container,
+.signup-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.login-container h2,
+.signup-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container form,
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input,
+.signup-container input,
+.login-container button,
+.signup-container button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login-container button,
+.signup-container button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-container button:hover,
+.signup-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-container .signup-link,
+.signup-container .login-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-container .signup-link a,
+.signup-container .login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-container .signup-link a:hover,
+.signup-container .login-link a:hover {
+  text-decoration: underline;
+}

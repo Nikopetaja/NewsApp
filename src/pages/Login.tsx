@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import app from '../components/firebase'; 
+import './Login-Signup.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -22,7 +23,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Log in</h2>
       <form onSubmit={handleLogin}>
         <div>
