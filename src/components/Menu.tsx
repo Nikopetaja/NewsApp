@@ -3,6 +3,7 @@ import React from 'react';
 import { IonContent, IonIcon, IonItem, IonLabel, IonList, IonListHeader, IonMenu, IonMenuToggle, IonNote } from '@ionic/react';
 import { useLocation } from 'react-router-dom';
 import { earthOutline, earthSharp, briefcaseOutline, briefcaseSharp, newspaperOutline, newspaperSharp, footballOutline, footballSharp, exitOutline, exitSharp } from 'ionicons/icons';
+import './Menu.css';
 
 interface AppPage {
   title: string;
