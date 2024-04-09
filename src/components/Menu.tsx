@@ -2,7 +2,7 @@
 import React from 'react';
 import { IonContent, IonIcon, IonItem, IonLabel, IonList, IonListHeader, IonMenu, IonMenuToggle, IonNote } from '@ionic/react';
 import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
+import { earthOutline, earthSharp, briefcaseOutline, briefcaseSharp, newspaperOutline, newspaperSharp, footballOutline, footballSharp, exitOutline, exitSharp } from 'ionicons/icons';
 
 interface AppPage {
   title: string;
@@ -13,41 +13,35 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
-    title: 'Saapuneet',
-    url: '/folder/Inbox',
-    iosIcon: mailOutline,
-    mdIcon: mailSharp
+    title: 'News',
+    url: '/folder/News',
+    iosIcon: newspaperOutline,
+    mdIcon: newspaperSharp
   },
   {
-    title: 'Outbox',
-    url: '/folder/Outbox',
-    iosIcon: paperPlaneOutline,
-    mdIcon: paperPlaneSharp
+    title: 'Sport',
+    url: '/folder/Sport',
+    iosIcon: footballOutline,
+    mdIcon: footballSharp
   },
   {
-    title: 'Favorites',
-    url: '/folder/Favorites',
-    iosIcon: heartOutline,
-    mdIcon: heartSharp
+    title: 'Business',
+    url: '/folder/Business',
+    iosIcon: briefcaseOutline,
+    mdIcon: briefcaseSharp
   },
   {
-    title: 'Archived',
-    url: '/folder/Archived',
-    iosIcon: archiveOutline,
-    mdIcon: archiveSharp
+    title: 'Culture',
+    url: '/folder/Culture',
+    iosIcon: earthOutline,
+    mdIcon: earthSharp
   },
   {
-    title: 'Trash',
-    url: '/folder/Trash',
-    iosIcon: trashOutline,
-    mdIcon: trashSharp
+    title: 'Log out',
+    url: '/login',
+    iosIcon: exitOutline,
+    mdIcon: exitSharp
   },
-  {
-    title: 'Spam',
-    url: '/folder/Spam',
-    iosIcon: warningOutline,
-    mdIcon: warningSharp
-  }
 ];
 
 

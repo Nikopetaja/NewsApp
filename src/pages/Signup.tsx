@@ -16,7 +16,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, password); 
-      history.push('/folder/inbox'); 
+      history.push('/folder/News'); 
     } catch (error) {
       setError(error.message);
     }

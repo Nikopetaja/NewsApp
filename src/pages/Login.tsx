@@ -16,7 +16,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password); 
-      history.push('/folder/inbox');
+      history.push('/folder/News');
     } catch (error) {
       setError(error.message);
     }
