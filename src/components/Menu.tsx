@@ -67,18 +67,6 @@ const Menu: React.FC = () => {
               </IonItem>
             </IonMenuToggle>
           ))}
-          <IonMenuToggle autoHide={true}>
-            <IonItem className={location.pathname === '/login' ? 'selected' : ''} routerLink="/login" routerDirection="none" lines="none" detail={false}>
-              <IonIcon aria-hidden="true" slot="start" ios={mailOutline} md={mailSharp} />
-              <IonLabel>Login</IonLabel>
-            </IonItem>
-          </IonMenuToggle>
-          <IonMenuToggle autoHide={true}>
-            <IonItem className={location.pathname === '/signup' ? 'selected' : ''} routerLink="/signup" routerDirection="none" lines="none" detail={false}>
-              <IonIcon aria-hidden="true" slot="start" ios={paperPlaneOutline} md={paperPlaneSharp} />
-              <IonLabel>Sign up</IonLabel>
-            </IonItem>
-          </IonMenuToggle>
         </IonList>
       </IonContent>
     </IonMenu>
