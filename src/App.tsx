@@ -32,7 +32,7 @@ const App: React.FC = () => {
   return (
     <IonApp>
       <IonReactRouter>
-        <IonSplitPane contentId="main">
+        <IonSplitPane contentId="main" when="false">
           <Menu />
           <IonRouterOutlet id="main">
             {/* Route for the login page */}
