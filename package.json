@@ -26,7 +26,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^5.3.4",
-    "react-router-dom": "^5.3.4"
+    "react-router-dom": "^5.3.4",
+    "xml-js": "^1.6.11"
   },
   "devDependencies": {
     "@capacitor/cli": "5.7.4",
