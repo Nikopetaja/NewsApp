@@ -20,6 +20,7 @@ const CulturePage: React.FC = () => {
             return {
               title: item.querySelector('title')?.textContent || '',
               description: item.querySelector('description')?.textContent || '',
+              thumbnail: item.querySelector('enclosure')?.getAttribute('url') || '', // Extract thumbnail URL
             };
           });
           setArticles(cultureNewsData);
@@ -43,12 +44,17 @@ const CulturePage: React.FC = () => {
       <IonContent>
             <IonList>
                 {articles.map((article, index) => (
-                    <IonItem key={index}>
+                    <React.Fragment key={index}>
+                      <IonItem>
+                      <img src={article.thumbnail} alt="Thumbnail" style={{ width: '100%' }}/>
+                      </IonItem>
+                      <IonItem>
                         <IonLabel>
                             <h2>{article.title}</h2>
                             <p>{article.description}</p>
                         </IonLabel>
                     </IonItem>
+                    </React.Fragment>
                 ))}
             </IonList>
         </IonContent>

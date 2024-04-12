@@ -20,6 +20,7 @@ const NewsPage: React.FC = () => {
           return {
             title: item.querySelector('title')?.textContent || '',
             description: item.querySelector('description')?.textContent || '',
+            thumbnail: item.getElementsByTagNameNS('*', 'thumbnail')[0]?.getAttribute('url') || '', // Extract thumbnail URL
           };
         });
         setNews(newsData);
@@ -42,7 +43,11 @@ const NewsPage: React.FC = () => {
       <IonContent>
         <IonList>
           {news.map((article, index) => (
-            <IonItem key={index}>
+            <React.Fragment key={index}>
+              <IonItem>
+              <img src={article.thumbnail} alt="Thumbnail" style={{ width: '100%' }}/>
+              </IonItem>
+              <IonItem>
               <IonLabel>
                 <IonText>
                   <h2>{article.title}</h2>
@@ -50,6 +55,7 @@ const NewsPage: React.FC = () => {
                 <p>{article.description}</p>
               </IonLabel>
             </IonItem>
+            </React.Fragment>
           ))}
         </IonList>
       </IonContent>
